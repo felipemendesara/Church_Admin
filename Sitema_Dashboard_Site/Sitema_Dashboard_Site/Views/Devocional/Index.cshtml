@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Sitema_Dashboard_Site.Models.Devocional>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+   <p style="background-color: #394a59;text-align: center"  > @Html.ActionLink("Nova devocional", "Create", new { @class = "botColor" })</p>
+
+<hr/>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading" style="text-align: center">
+                <b>Cadastro de devocionais</b>
+            </header>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.TituloDevocional)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.TextoDevocional)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Autor)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.LivroBase)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CapituloBase)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.VersiculoInicioBase)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.VersiculoFinalBase)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TituloDevocional)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TextoDevocional)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Autor)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LivroBase)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CapituloBase)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.VersiculoInicioBase)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.VersiculoFinalBase)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Editar", "Edit", new { id = item.IdDevocional }, new { @class = "botColor" }) |
+                                    @Html.ActionLink("Detalhar", "Details", new { id = item.IdDevocional }, new { @class = "botColor" }) |
+                                    @Html.ActionLink("Excluir", "Delete", new { id = item.IdDevocional }, new { @class = "botColor" })
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+

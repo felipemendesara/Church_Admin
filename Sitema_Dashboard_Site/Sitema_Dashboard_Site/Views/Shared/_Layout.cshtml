@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Creative - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/elegant-icons-style.css" >
+    <link href="~/Content/bootstrap.css" rel="stylesheet">
+    <link href="~/Content/font-awesome.css" rel="stylesheet">
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/fullcalendar.css" rel="stylesheet">
+    <link href="~/Content/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <link href="~/Content/jquery-ui-1.10.4.min.css" rel="stylesheet">
+    <link href="~/Content/line-icons.css" rel="stylesheet">
+    <link href="~/Content/owl.carousel.css" rel="stylesheet">
+    <link href="~/Content/Site.css" rel="stylesheet">
+    <link href="~/Content/style-responsive.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+    <link href="~/Content/widgets.css" rel="stylesheet">
+    <link href="~/Content/xcharts.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="">
+
+
+        <header class="header dark-bg">
+            <div class="toggle-nav">
+                <i class="fa fa-arrows"></i>
+            </div>
+
+            <!--logo start-->
+            <a href="index.html" class="logo">church  <span class="lite">admin</span></a>
+            <!--logo end-->
+
+
+            <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+                    
+
+                    <span class="username">@Html.Partial("_LoginPartial")</span>
+                 
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+             
+                            <i class="fa fa-home" style="color: white"></i>
+                            <span><b> @Html.ActionLink("Inicio", "Index", "Home")</b></span>
+           
+                    </li>
+                    <li class="active">
+                     
+                            <i class="fa fa-quote-right" style="color: white"></i>
+                            <span> <b>@Html.ActionLink("Devocionais", "Index", "Devocional")</b></span>
+                 
+                    </li>
+                    <li class="sub-menu">
+                      
+                            <i class="fa fa-calendar" style="color: white"></i>
+                            <span><b> @Html.ActionLink("Avisos", "Index", "Home")</b></span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                      
+               
+                    </li>
+                    <li class="sub-menu">
+
+                            <i class="fa fa-file-image-o" style="color: white"></i>
+                            <span><b> @Html.ActionLink("Banner", "Index", "Home")</b></span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+
+                    
+                    </li>
+                    <li>
+                        <i class="fa fa-cog" style="color: white"></i>
+                        <span><b> @Html.ActionLink("Configuração", "Index", "Home")</b></span>
+
+                    </li>
+                    
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                @RenderBody()
+
+            </section>
+          
+        </section>
+        <!--main content end-->
+    </section>
+    <!-- container section start -->
+    <!-- javascripts -->
+    <script src="~/Scripts/_references.js"></script>
+    <script src="~/Scripts/additional-methods.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/calendar-custom.js"></script>
+    <script src="~/Scripts/chartjs-custom.js"></script>
+    <script src="~/Scripts/charts-flot.js"></script>
+    <script src="~/Scripts/charts-other.js"></script>
+    <script src="~/Scripts/charts-xcharts.js"></script>
+    <script src="~/Scripts/charts.js"></script>
+    <script src="~/Scripts/dynamic-table.js"></script>
+    <script src="~/Scripts/easy-pie-chart.js"></script>
+    <script src="~/Scripts/excanvas.min.js"></script>
+    <script src="~/Scripts/form-component.js"></script>
+    <script src="~/Scripts/form-validation-script.js"></script>
+    <script src="~/Scripts/fullcalendar.js"></script>
+    <script src="~/Scripts/fullcalendar.min.js"></script>
+    <script src="~/Scripts/ga.js"></script>
+    <script src="~/Scripts/gdp-data.js"></script>
+    <script src="~/Scripts/gritter.js"></script>
+    <script src="~/Scripts/html5shiv.js"></script>
+    <script src="~/Scripts/index.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.intellisense.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.map"></script>
+    <script src="~/Scripts/jquery.validate-vsdoc.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/lte-ie7.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/morris-script.js"></script>
+    <script src="~/Scripts/morris.min.js"></script>
+    <script src="~/Scripts/owl.carousel.js"></script>
+    <script src="~/Scripts/respond.js"></script>
+    <script src="~/Scripts/respond.min.js"></script>
+    <script src="~/Scripts/scripts.js"></script>
+    <script src="~/Scripts/sliders.js"></script>
+    <script src="~/Scripts/sparkline-chart.js"></script>
+    <script src="~/Scripts/sparklines.js"></script>
+    <script src="~/Scripts/xcharts.min.js"></script>
+    
+    
+    
+    
+
+    <script>
+
+        //knob
+        $(function () {
+            $(".knob").knob({
+                'draw': function () {
+                    $(this.i).val(this.cv + '%')
+                }
+            })
+        });
+
+        //carousel
+        $(document).ready(function () {
+            $("#owl-slider").owlCarousel({
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true
+
+            });
+        });
+
+        //custom select box
+
+        $(function () {
+            $('select.styled').customSelect();
+        });
+
+        /* ---------- Map ---------- */
+        $(function () {
+            $('#map').vectorMap({
+                map: 'world_mill_en',
+                series: {
+                    regions: [{
+                        values: gdpData,
+                        scale: ['#000', '#000'],
+                        normalizeFunction: 'polynomial'
+                    }]
+                },
+                backgroundColor: '#eef3f7',
+                onLabelShow: function (e, el, code) {
+                    el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
+
+@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>*@
